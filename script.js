@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 
 
 async function getSongs() {
-    let a = await fetch("songs/");
+    let a = await fetch("/songs/");
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -126,5 +126,6 @@ async function main() {
 }
 
 main();
+
 
 
